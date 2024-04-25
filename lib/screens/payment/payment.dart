@@ -166,8 +166,8 @@ class _PaymentScreenState extends State<PaymentScreen> {
                       Expanded(
                         child: TextFormField(
                           decoration: InputDecoration(
-                            hintText: AppLocalizations.of(context).getTranslate("card_year"),
-                            labelText: AppLocalizations.of(context).getTranslate("card_year"),
+                            hintText: AppLocalizations.of(context).getTranslate("card_month"),
+                            labelText: AppLocalizations.of(context).getTranslate("card_month"),
                           ),
                           controller: cardExpMonth,
                           keyboardType: TextInputType.number,
