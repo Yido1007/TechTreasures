@@ -41,21 +41,13 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   children: [
                     const Gap(20),
                     SettingsItem(
-                      icon: Icons.person_outline,
-                      text:
-                          AppLocalizations.of(context).getTranslate("account"),
-                      onTap: () => GoRouter.of(context).push("/profile"),
-                    ),
-                    SettingsItem(
                       icon: Icons.notifications_outlined,
-                      text: AppLocalizations.of(context)
-                          .getTranslate("notifications"),
+                      text: AppLocalizations.of(context).getTranslate("notifications"),
                       onTap: () => GoRouter.of(context).push("/notification"),
                     ),
                     SettingsItem(
                       icon: Icons.language_outlined,
-                      text:
-                          AppLocalizations.of(context).getTranslate("language"),
+                      text: AppLocalizations.of(context).getTranslate("language"),
                       onTap: () => GoRouter.of(context).push("/language"),
                     ),
                     SwitchListTile(
@@ -66,8 +58,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                       secondary: clientCubit.state.darkMode
                           ? const Icon(Icons.sunny)
                           : const Icon(Icons.nightlight),
-                      title: Text(AppLocalizations.of(context)
-                          .getTranslate("dark_mode")),
+                      title: Text(AppLocalizations.of(context).getTranslate("dark_mode")),
                     ),
                   ],
                 ),
