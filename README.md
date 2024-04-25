@@ -1,2 +1,3 @@
-# TechTreasures
-Minimal  E-commerce project
+# techtreasure
+
+A new Flutter project.
